@@ -1,0 +1,49 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+}
+
+input:focus {
+  outline-color: #FFFF0E;
+}
+
+.newsletter .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.newsletter .form-group:first-child {
+  margin-top: 30px;
+}
+
+#hint {
+  font-style: italic;
+}
+
+.survey .form-group label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}
