@@ -24,67 +24,75 @@
     </header>
 
     <main role="main">
-      <h1 class= "heading">Survey</h1>
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="Image of Concert">
-          <div class="container">
-            <form class = "survey">
-              <p>Who is your favorite band member:</p>
-              <input type="radio" name="res" value="John" aria-label="Accessible Frog, John"> John
-              <input type="radio" name="res" value="Hazzard" aria-label="Accessible Frog, Hazzard"> Hazzard
-              <input type="radio" name="res" value="Bob" aria-label="Accessible Frog, Bob"> Bob
-              <input type="radio" name="res" value="Sally" aria-label="Accessible Frog, Sally"> Sally
+      <form role="form">
+        <fieldset class="survey">
+          <legend class= "heading">Survey</legend>
+          <div class="card">
+            <div class="flex">
+              <img class="photo" src= "img/concert01.jpg" alt="Image of Concert">
+              <div class="container">
+                  
+                <p>Who is your favorite band member:</p>
+                <input id="john" type="radio" name="res" value="John" aria-label="Accessible Frog, John">
+                <label for="john">John</label>
+                <input id="hazzard" type="radio" name="res" value="Hazzard" aria-label="Accessible Frog, Hazzard">
+                <label for="hazzard">Hazzard</label>
+                <input id="bob" type="radio" name="res" value="Bob" aria-label="Accessible Frog, Bob">
+                <label for="bob">Bob</label>
+                <input id="sally" type="radio" name="res" value="Sally" aria-label="Accessible Frog, Sally">
+                <label for="sally">Sally</label>
+                <div class="form-group">
+                  <label for="albums">What is your favorite album:</label>
+                  <select id="albums" name="select">
+                    <option value="1">A Day Of Old</option>
+                    <option value="2">Diamond Fireworks</option>
+                    <option value="3">Enjoy Your Desire</option>
+                    <option value="4">Finding My Shadow</option>
+                    <option value="5">Heroic Forever</option>
+                    <option value="6">Midnight Fires</option>
+                    <option value="7">Music Of My Life</option>
+                    <option value="8">Party For An Angel</option>
+                    <option value="9">Song For Yesterday</option>
+                    <option value="10">Street Of The Rider</option>
+                    <option value="11">This Is For You</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="favorite_song">What is your favorite song:</label>
+                  <textarea id="favorite_song"></textarea>
+                </div>
 
-              <p>What is your favorite album:</p>
-              <select id="albums" name="select">
-                <option value="1">A Day Of Old</option>
-                <option value="2">Diamond Fireworks</option>
-                <option value="3">Enjoy Your Desire</option>
-                <option value="4">Finding My Shadow</option>
-                <option value="5">Heroic Forever</option>
-                <option value="6">Midnight Fires</option>
-                <option value="7">Music Of My Life</option>
-                <option value="8">Party For An Angel</option>
-                <option value="9">Song For Yesterday</option>
-                <option value="10">Street Of The Rider</option>
-                <option value="11">This Is For You</option>
-              </select>
-              <div class="form-group">
-                <label for="favorite_song">What is your favorite song:</label>
-                <textarea id="favorite_song"></textarea>
               </div>
-            </form>
+            </div>
+          </div>
+      </fieldset>
+      <fieldset class="newsletter">
+        <legend class= "heading">Newsletter</legend>
+        <div class="card">
+          <div class="flex">
+            <img class="photo" src= "img/the_band.jpg" alt="Accessible Frog Band">
+              <div class="container">
+                <div class="form-group">
+                  <label for="name">Name: </label>
+                  <input id="name" type ="text" name="textfield">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email: </label>
+                  <input id="email" type="email" name="textfield">
+                </div>
+                <div class="form-group">
+                  <label for="retype_email">Retype Email:</label>
+                  <input id="retype_email" type="email" name="textfield">
+                </div>
+                <div class="form-group">
+                  <button type="submit" aria-describedby="hint">Sign Up</button>
+                </div>
+                <p id="hint">Your password must be at least 10 characters in length. It must contain a mixture of upper and lower case letters, numbers and punctuation marks.</p>
+              </div>
           </div>
         </div>
-      </div>
-      <h1 class= "heading">Newsletter</h1>
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt="Accessible Frog Band">
-            <div class="container">
-              <form class="newsletter" role="form">
-                  <fieldset>
-                    <legend>Accessible Frog</legend>
-                    <div class="form-group">
-                      <label for="name">Name: </label>
-                      <input id="name" type ="text" name="textfield">
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email: </label>
-                      <input id="email" type="email" name="textfield">
-                    </div>
-                    <div class="form-group">
-                      <label for="retype_email">Retype Email:</label>
-                      <input id="retype_email" type="email" name="textfield">
-                    </div>
-                    <button type="submit" aria-describedby="hint">Sign Up</button>
-                  </fieldset>
-              </form>
-              <p id="hint">Your password must be at least 10 characters in length. It must contain a mixture of upper and lower case letters, numbers and punctuation marks.</p>
-            </div>
-        </div>
-      </div>
+      </fieldset>
+      </form>
     </main>
 
     <footer role="contentinfo">

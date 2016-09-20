@@ -14,17 +14,28 @@ form {
 .container{
   text-align: center;
 }
-.newsletter{
-  text-align: right;
-}
+
 
 input:focus {
   outline-color: #FFFF0E;
 }
 
-.newsletter .form-group {
+.form-group {
   display: block;
   margin-bottom: 15px;
+}
+
+.newsletter .form-group,
+.survey .form-group {
+  text-align: left;
+}
+
+.newsletter .form-group label {
+  display: block;
+}
+
+.newsletter .form-group button {
+  text-align: left;
 }
 
 .newsletter .form-group:first-child {

@@ -82,7 +82,8 @@ header h1 {
   margin-top: 77px;
   margin-bottom: 20px;
   letter-spacing: 4px;
-  color: #333;
+  color: #FFFFE0;
+  text-shadow: 0px 1px 3px #002;
 }
 
 header p {
@@ -90,7 +91,8 @@ header p {
   text-transform: lowercase;
   margin-top: 24px;
   letter-spacing: 1px;
-  color: #333;
+  color: #FFFFE0;
+  text-shadow: 0px 1px 4px #002;
 }
 
 .tag {
